@@ -1,0 +1,26 @@
+package examen1;
+import java.util.Scanner;
+
+public class esdivisible {
+static Scanner sc=new Scanner(System.in);
+static boolean Esdivisible;
+	
+	public static boolean esDivisible(int a,int b,int c,boolean Esdivisible) {
+	if((a%b==0)&(a%c==0)) {
+		return Esdivisible=true;
+	}
+		return Esdivisible=false;
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("Introduce un número");
+		int a=sc.nextInt();
+		System.out.println("Introduce otro número");
+		int b=sc.nextInt();
+		System.out.println("Introduce un último número");
+		int c=sc.nextInt();
+		System.out.println("A continuación se muestra si el primer número es divisible con el segundo y con el tercero, true si lo es y falso si no");
+		System.out.println(esdivisible.esDivisible(a,b,c,Esdivisible));
+	}
+
+}
